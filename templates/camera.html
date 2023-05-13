@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Camera</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/camera.css') }}">
+  </head>
+  <body>
+    <h1>Flask Camera</h1>
+    <video id="video"autoplay></video>
+    <button id="snap">Snap Photo</button>
+    <canvas id="canvas"></canvas>
+
+    <script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+  </body>
+</html>
