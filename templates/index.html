@@ -1,6 +1,14 @@
-{% include 'main-templates/header.html' %}
+{% include 'main-templates/header.html' %} {% include 'partials/navbar.html' %}
 
-<h1>Selamat Datang di Halaman Kami</h1>
-<a href="/camera" class="btn btn-primary">Klik Disini</a>
+<div class="row content">
+    <div class="col-6 d-flex justify-content-center title">
+      <h4>Transform Your Tajwid Reading</h4>
+      <h1>with <strong> Tajwid Library</strong></h1>
+    </div>
+    <div class="col-6 camera">
+      <a href="/camera" class="btn btn-primary">Klik Disini</a>     
+    </div>
+  </div>
+
 
 {% include 'main-templates/footer.html' %}

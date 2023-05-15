@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'arab';
+    src: url(../font/Bismillah\ Script.ttf);
+}
+@font-face {
+    font-family: 'arab2';
+    src: url(../font/Sketsa\ Ramadhan\ Alternates.ttf);
+}
+
+body{
+    background-color: #E3FDFD;
+    background-color: #ffffff;
+}
+.navbar{
+  height: 7vh;
+    background-color: #ffffff;
+}
+/*                        */
+.navbar-brand span{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'arab2';
+}
+.navbar-brand span:nth-child(odd){
+    color: green;
+}
+.navbar-brand span:nth-child(even){
+    color: rgb(225, 225, 16);
+    z-index: 2;
+    position: relative;
+}
+.content{
+    display: flex;
+    height: 90vh;
+    background: rgb(203,241,245);
+    background: linear-gradient(45deg, rgba(203,241,245,1) 0%, rgba(114,238,250,1) 100%);
+    flex-wrap: wrap;
+
+}
+.title{
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aquamarine; */
+   
+}
+.title-main h1{
+    font-weight: bolder;
+    color: #396694;
+    padding-bottom: 1vh;
+}
+.title-main h5{
+    font-weight:200;
+}
+.shape{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #a31e1e;
+    border-radius: 43% 57% 25% 75% / 36% 33% 67% 64% ;
+}
+#snap{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background: rgb(32,190,207);
+    background: linear-gradient(45deg, rgba(32,190,207,1) 0%, rgba(84,226,188,1) 100%);}
+.camera{
+    /* background-color: burlywood; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+video{
+    top: 60px;
+    position: relative;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    width: 80%;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#snap{
+  bottom: 0px;
+    position: relative;
+    z-index: 99;
+}
+
+.modal-body{
+    width: 1000px;
+    height: max-content;
+    background-color: #E3FDFD;
+}
+
+canvas{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .navbar{
+       height: 60px;
+    }
+    .navbar-brand span{
+        font-size: 30px;}
+    .content{
+        display: block;
+        background-color: #396694;
+    }
+    .title{
+        padding-top: 20px;
+        height: 100px;
+    }
+    .title-main h1{
+        font-weight: bolder;
+        color: #396694;
+        font-size: 20px;
+        line-height: 10px;
+       
+    }
+    .title-main h5{
+        font-size: 10px;
+    }
+
+.camera{
+  position: relative;
+  top: -40px;
+    justify-content: start;
+    flex: 1;
+    width: 100%;
+}
+video{
+    height: 500px;
+}
+#snap{
+    bottom: 0px;
+      position: relative;
+      z-index: 99;
+  }
+  canvas{
+    width: 100%;
+    height: 600px;
+}
+  .modal-body{
+    width: 100%;
+    height: 100%;
+    background-color: #E3FDFD;
+}
+}
+
+
